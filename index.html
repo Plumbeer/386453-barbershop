@@ -1,12 +1,139 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Барбершоп</title>
-  </head>
-  <body>
+	<head>
+    	<meta charset="utf-8">
+    	<title>Барбершоп &laquo;Бородинский&raquo;</title>
+    </head>
+    <body>
+    	<header class="main_header">
+    		<nav class="main_header_nav">
+    			<a class="sitemenu_logo">
+                    <img class="site_logo" src="img/site_logo.svg" width="368" height="153" alt="Логотип барбершопа &laquo;Бородинский&raquo;">
+                </a>
+    			<ul class="sitemenu_list">
+    				<li class="sitemenu_item"><a href="info.html">Информация</a></li>
+    				<li class="sitemenu_item"><a href="news.html">Новости</a></li>
+    				<li class="sitemenu_item"><a href="price.html">Прайс-лист</a></li>
+    				<li class="sitemenu_item"><a href="catalog.html">Магазин</a></li>
+    				<li class="sitemenu_item"><a href="contacts.html">Контакты</a></li>
+    			</ul>
+    			<ul class="usermenu_list">
+    				<li class="usermenu_item"><a href="barbershop_index_login">Вход</a></li>
+    			</ul>
+    		</nav>
+    	</header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+    	<main class="conteiner">
+    		<h1 class="visually-hidden">Барбершоп &laquo;Бородинский&raquo;</h1>
 
-  </body>
+    		<section class="features">
+    			<h2 class="visually-hidden">Преимущества барбершопа &laquo;Бородинский&raquo;</h2>
+    			<ul class="features_list">
+    				<li class="features-item">
+    					<h3>Быстро</h3>
+    					<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы &ndash; счастливый обладатель стильной стрижки-минутки!</p>
+    				</li>
+    				<li class="features-item">
+    					<h3>Круто</h3>
+    					<p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяко случае внешне.</p>
+    				</li>
+    				<li class="features-item">
+    					<h3>Дорого</h3>
+    					<p>Наши мастера &ndash; профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+    				</li>
+    			</ul>
+    		</section>
+
+    		<section class="news_shop">
+    			<h2>Новости</h2>
+    			<ul class="news_shop_list">
+    				<li class="news_shop_item">
+    					<p>Нам наконец завезли ягермейстер! Теерь вы можете пропустить стаканчик во аремя стрижки</p>
+    					<time datetime="2017-01-11">11 января</time>
+    				</li>
+    				<li class="news_shop_item">
+    					<p>В нашей команде пополнение, Борис &laquo;Бритва&raquo; Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+    					<time datetime="2017-01-18">18 января</time>
+    				</li>
+    			</ul>
+    			<a class="button" href="news.html">Новости</a>
+    		</section>
+
+    		<section class="gallery">
+    			<h2>Фотогалерея</h2>
+    			<figure class="gallery-content">
+    				<a href="#">
+    					<img src="img/gallery_interier_1" width="286" height="164" alt="Фото интерьера">
+    				</a>
+    			</figure>
+    			<form class="gallery_interface" action="http//echo.htmlacademy.ru" method="post">
+    				<input class="button gallery_button" name="gallery_button_left" type="submit" value="Назад"> 
+    				<input class="button gallery_button" name="gallery_button_right" type="submit" value="Вперед">
+                </form>
+    		</section>
+
+            <section class="contacts">
+                <h2>Контактная информация</h2>
+                <p>
+                    Барбершоп &laquo;Бородинский&raquo;<br>
+                    адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                    телефон: +7 (495) 666-02-66
+                </p>
+                <p>
+                    Время работы:<br>
+                    пн-пт: с 10:00 до 22:00<br>
+                    сб-вс: с 10:00 до 19:00
+                </p>
+                <a class="button contacts-button" href="#">Как проехать</a>
+                <a class="button contacts-button" href="#">Обратная связь</a>
+            </section>
+
+            <section class="enroll">
+                <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+                <form class="enroll_field" action="http//echo.htmlacademy.ru" method="post">
+                    <label class="enroll_item"><input name="date" type="text" value="" placeholder="08.10.2017"> Дата</label>
+                    <label class="enroll_item"><input name="time" type="text" value="" placeholder="10:00"> Время</label>
+                    <label class="enroll_item"><input name="name" type="text" value="" placeholder="Борода"> Ваше имя</label>
+                    <label class="enroll_item"><input name="phone" type="tel" value="" placeholder="+7 123 456-78-90"> Телефон</label>
+                    <input class="enroll_button" name="enroll_button_send" type="submit">Отправить
+                </form>
+            </section>
+
+            <footer class="main_footer">
+                <p class="footer_contacts">
+                    Барбершоп &laquo;Бородинский&raquo;<br>
+                    адрес: г. Санкт-Петербург, ул. Конюшенная, д. 19/8
+                    <a href="#">Как нас найти?</a><br>
+                    телефон: +7 (495) 666-02-66
+                </p>
+                <div class="footer_social">
+                    <b>Давайтк дружить!</b>
+                    <ul class="social_list">
+                        <li class="social_button"><a href="#">Вконтакте</a></li>
+                        <li class="social_button"><a href="#">Фейсбук</a></li>
+                        <li class="social_button"><a href="#">Инстаграм</a></li>
+                    </ul>
+                </div>
+                <p class="footer_copyright">
+                    <b>Разработано:</b>
+                    <a class="button" href="https//htmlacademy.ru">HTML Academy</a>
+                </p>
+            </footer>
+            <section class="modal modal_login_account">
+                <h2>Личный кабинет</h2>
+                <p class="modal">Введите пожалуйста свой логин и пароль</p>
+                <form class="modal_login_form" action="http//echo.htmlacademy.ru" method="post">
+                    <input class="user_field_login" type="text" name="user_login" value="" placeholder="логин">
+                    <input class="user_field_password" type="password" name="user_password" value="" placeholder="пароль">
+                    <input class="user_remember" type="checkbox" name="remember">Запомните меня
+                    <a class="user_password_restore" href="#">Я забыл пароль</a>
+                    <input class="user_button" name="user_button_login" type="submit">Войти
+                </form>
+                <span class="modal_close">x</span>
+            </section>
+            <section class="modal modal_map">
+                <h2 class="visually_hidden">Как до нас добраться</h2>
+                <span class="modal_close">x</span>
+            </section>
+	</body>
 </html>
