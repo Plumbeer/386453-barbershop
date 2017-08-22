@@ -1,0 +1,38 @@
+
+body {
+	font-size: 14px;
+	line-heaght: 24px;
+	color: #000000;
+	font-weight: bold;
+	font-family: "PTSans";
+	background-color: #884422;
+}
+
+.news_shop h2,
+.gallery h2,
+.contacts h2,
+.enroll h2 {
+	font-size: 30px;
+	line-heaght: 42px;
+	color: #000000;
+	font-weight: bold;
+	font-family: "PTSans";
+}
+
+.features_item h3 {
+	font-size: 30px;
+	line-heaght: 42px;
+	color: #000000;
+	font-weight: bold;
+	font-family: "PTSans";
+}
+
+.page_title {
+	font-size: 30px;
+	line-heaght: 42px;
+	color: #000000;
+	font-weight: bold;
+	font-family: "PTSans";
+}
+
+
