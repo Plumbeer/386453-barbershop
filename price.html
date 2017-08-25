@@ -95,17 +95,20 @@
             </p>
         </footer>
 
-         <section class="modal modal_login_account">
+        <section class="modal modal_login_account">
             <h2>Личный кабинет</h2>
             <p class="modal">Введите пожалуйста свой логин и пароль</p>
             <form class="modal_login_form" action="http//echo.htmlacademy.ru" method="post">
-                <input class="user_field_login" type="text" name="user_login" value="" placeholder="логин">
-                <input class="user_field_password" type="password" name="user_password" value="" placeholder="пароль">
-                <input class="user_remember" type="checkbox" name="remember">Запомните меня
+                <label class="visually_hidden" for="user_login">Ваш логин</label>
+                <input class="user_field_login" type="text" name="user_login" id="user_login" placeholder="логин">
+                <label class="visually_hidden" for="user_password">Ваш пароль</label>
+                <input class="user_field_password" type="password" name="user_password" id="user_password" placeholder="пароль">
+                <input class="user_remember_form" type="checkbox" name="remember_form" id="remember_form">
+                <label for="remember_form">Запомните меня</label>
                 <a class="user_password_restore" href="#">Я забыл пароль</a>
-                <input class="user_button" name="user_button_login" type="submit">Войти
+                <button class="button user_login_button" name="user_button_login">Войти</button>
             </form>
-            <span class="modal_close">x</span>
+            <button class="modal_close">Закрыть</button>
         </section>
     </body>
 </html>
